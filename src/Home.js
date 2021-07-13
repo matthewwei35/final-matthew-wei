@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
   return (
     <div className="Home">
-        <h1>FEW 2.3 Final - Matthew Wei</h1>
+      <h1>FEW 2.3 Final - Matthew Wei</h1>
     </div>
   );
 }

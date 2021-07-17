@@ -1,3 +1,5 @@
+import './StarWarsDisplay.css';
+
 function StarWarsDisplay(props) {
   const { name, height, mass, hairColor, eyeColor } = props;
   

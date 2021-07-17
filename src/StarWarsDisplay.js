@@ -1,7 +1,7 @@
 import './StarWarsDisplay.css';
 
 function StarWarsDisplay(props) {
-  const { name, height, mass, hairColor, eyeColor } = props;
+  const { name, height, mass, hairColor, eyeColor, homeWorld } = props;
   
   return (
     <div className="StarWarsDisplay">
@@ -10,6 +10,7 @@ function StarWarsDisplay(props) {
       <p>Mass: {mass}</p>
       <p>Hair Color: {hairColor}</p>
       <p>Eye Color: {eyeColor}</p>
+      <p>Home World: {homeWorld}</p>
     </div>
   );
 }

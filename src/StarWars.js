@@ -21,12 +21,18 @@ function StarWars() {
       const hairColor = json.hair_color;
       const eyeColor = json.eye_color;
 
+      const homeWorldLink = json.homeworld;
+      const homeWorldRes = await fetch(homeWorldLink);
+      const homeWorldJson = await homeWorldRes.json();
+      const homeWorld = homeWorldJson.name;
+
       setData({
         name,
         height,
         mass,
         hairColor,
-        eyeColor
+        eyeColor,
+        homeWorld
       });
     } catch(err) {
       console.log(err);
@@ -52,7 +58,6 @@ function StarWars() {
       </form>
       {data && <StarWarsDisplay {...data} />}
       <button onClick={() => saveCharacter()}>Save</button>
-
     </div>
   );
 }

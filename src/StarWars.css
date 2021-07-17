@@ -5,3 +5,7 @@
   border-radius: 10%;
   border: none;
 }
+
+.StarWars input {
+  margin-right: 1rem;
+}
